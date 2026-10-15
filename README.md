@@ -50,4 +50,4 @@ https://www.youtube.com/watch?v=4JaIWY7IWgM
 ## 8. Link GitHub
 
 **Repository GitHub:**  
-https://github.com/bruhmoment5285/CSE122-GK-SV62-LeThanhTung-BaoCaoAnToan
+https://github.com/nguyenminhtruong07/CSE122---GK---SV59---NguyenMinhTruong---Quantri-Danhmuc
