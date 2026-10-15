@@ -1,0 +1,564 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    background: #F2F7FF;
+    font-family: Inter, Arial, sans-serif;
+    color: #1F2937;
+    font-size: 13px;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.app {
+    width: 100%;
+    max-width: 1440px;
+    min-height: 1060px;
+    margin: 0 auto;
+    background: white;
+    overflow: hidden;
+}
+
+.topbar {
+    height: 80px;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    border-bottom: 1px solid #D1D5DB;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.logo-icon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background: #2563EB;
+    color: white;
+    font-size: 25px;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.top-nav a {
+    color: #6B7280;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.top-nav a.active {
+    color: #2563EB;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.notification {
+    color: #2563EB;
+    font-size: 20px;
+}
+
+.role-badge,
+.status {
+    padding: 4px 9px;
+    background: #EFF6FF;
+    border-radius: 4px;
+    color: #2563EB;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.avatar {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background: #EFF6FF;
+    color: #2563EB;
+    font-weight: 700;
+}
+
+.btn {
+    min-height: 42px;
+    padding: 0 16px;
+    border: 1px solid #D1D5DB;
+    border-radius: 4px;
+    background: white;
+    color: #2563EB;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    background: #EFF6FF;
+}
+
+.btn-add {
+    width: 100%;
+    background: #9CD1F9;
+    color: #1F2937;
+}
+
+.btn-add:hover {
+    background: #7CC1F5;
+}
+
+.layout {
+    display: flex;
+    align-items: stretch;
+}
+
+.sidebar {
+    width: 228px;
+    flex-shrink: 0;
+    min-height: 980px;
+    padding: 30px 16px 24px;
+    border-right: 1px solid #D1D5DB;
+}
+
+.sidebar h4 {
+    margin: 0 0 22px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 28px;
+    background: #EFF6FF;
+}
+
+.side-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 10px;
+    border-radius: 4px;
+    color: #6B7280;
+    font-size: 12px;
+}
+
+.side-link span {
+    width: 17px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.side-link.active {
+    background: #EFF6FF;
+    color: #2563EB;
+    font-weight: 600;
+}
+
+.side-link:hover {
+    background: #F3F7FF;
+}
+
+.role-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 14px;
+    border-radius: 4px;
+}
+
+.role-card p {
+    margin: 0;
+    color: #6B7280;
+    font-size: 11px;
+}
+
+.role-card strong {
+    color: #6B7280;
+    font-size: 13px;
+}
+
+.role-card a {
+    color: #6B7280;
+    font-size: 12px;
+}
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.page-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.eyebrow {
+    margin: 0 0 5px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+h1 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+.subtitle {
+    margin: 5px 0 0;
+    color: #606369;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.stat-card {
+    min-width: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid #D1D5DB;
+    border-radius: 4px;
+    background: white;
+}
+
+.stat-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: #6B7280;
+    font-size: 12px;
+}
+
+.stat-card h2 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+.stat-card p {
+    margin: 0;
+    color: #2563EB;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.blue-text {
+    color: #2563EB;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    align-items: start;
+    gap: 18px;
+}
+
+.category-panel,
+.taxonomy-panel {
+    min-width: 0;
+    padding: 22px;
+    border: 1px solid #D1D5DB;
+    border-radius: 4px;
+    background: white;
+}
+
+.category-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.category-panel h3,
+.taxonomy-panel h3 {
+    margin: 0;
+    color: #111827;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.category-item {
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    border: none;
+    border-radius: 4px;
+    background: white;
+    text-align: left;
+}
+
+.category-item:hover,
+.category-item.selected {
+    background: #EFF6FF;
+}
+
+.category-item strong {
+    color: #111827;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.category-item span {
+    color: #2563EB;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.taxonomy-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.panel-description {
+    margin: 0;
+    color: #2563EB;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+thead {
+    background: #D3E5FF;
+}
+
+th {
+    padding: 12px 8px;
+    color: #111827;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+td {
+    padding: 16px 8px;
+    border-bottom: 1px solid #D1D5DB;
+    color: #2563EB;
+    font-size: 12px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.status {
+    display: inline-block;
+}
+
+.status.draft {
+    color: #2563EB;
+    background: #EFF6FF;
+}
+
+.text-btn {
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #2563EB;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.text-btn:hover {
+    text-decoration: underline;
+}
+
+.ai-suggestion {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background: #EFF6FF;
+}
+
+.ai-icon {
+    color: #2563EB;
+    font-size: 18px;
+}
+
+.ai-suggestion p {
+    flex: 1;
+    margin: 0;
+    color: #2563EB;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.footer {
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    border-top: 1px solid #D1D5DB;
+    color: #2563EB;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+@media (max-width: 1100px) {
+    body {
+        padding: 12px;
+    }
+
+    .topbar {
+        padding: 16px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .top-nav {
+        order: 3;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .user-info {
+        gap: 8px;
+    }
+
+    .sidebar {
+        width: 190px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 0;
+    }
+
+    .app {
+        min-height: 100vh;
+    }
+
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+        padding: 18px;
+        border-right: none;
+        border-bottom: 1px solid #D1D5DB;
+    }
+
+    .sidebar h4 {
+        margin-bottom: 12px;
+    }
+
+    .side-nav {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-bottom: 10px;
+    }
+
+    .role-card {
+        padding: 10px;
+    }
+
+    .main-content {
+        padding: 18px;
+    }
+
+    .page-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .category-panel,
+    .taxonomy-panel {
+        padding: 16px;
+    }
+
+    .ai-suggestion {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .ai-suggestion p {
+        min-width: 150px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+}
