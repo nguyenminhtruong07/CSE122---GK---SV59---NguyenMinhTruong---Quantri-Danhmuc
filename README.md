@@ -43,6 +43,10 @@ Thiết kế Figma của dự án HomeFit AI:
 
 https://www.figma.com/design/23gRuPqABQIWU68kh21JP5/CSE122-BTL17_HOMEFIT-AI-Nh%25C3%25B3m-17?node-id=85-11037&t=0dCluaWNp8s7A9Re-0
 
+Thiết kế Figma của trang được trình bày:
+
+https://www.figma.com/design/p1v9FPVPagrfuMJnL6U8Kk/Qu%25E1%25BA%25A3n-tr%25E1%25BB%258B---Danh-m%25E1%25BB%25A5c?node-id=1-2&t=ormvYI4QTTJOw6U5-0
+
 ## 7. Link video trình bày
 
 https://www.youtube.com/watch?v=4JaIWY7IWgM
